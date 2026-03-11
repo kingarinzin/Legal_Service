@@ -1,18 +1,54 @@
-import { Scale, Building2, Landmark, Gavel, Shield, BookOpen, Users, Briefcase, FileText, Award, Globe } from "lucide-react"
+import {
+  Scale,
+  Building2,
+  Landmark,
+  Gavel,
+  Shield,
+  BookOpen,
+  Users,
+  Briefcase,
+  FileText,
+  Award,
+  Globe,
+} from "lucide-react";
 
 const institutions = [
   { name: "National Bar Association", icon: Scale, location: "Nationwide" },
-  { name: "Metropolitan Legal Aid", icon: Building2, location: "Urban Centers" },
-  { name: "Federal Court Services", icon: Landmark, location: "Federal Districts" },
+  {
+    name: "Metropolitan Legal Aid",
+    icon: Building2,
+    location: "Urban Centers",
+  },
+  {
+    name: "Federal Court Services",
+    icon: Landmark,
+    location: "Federal Districts",
+  },
   { name: "Justice Partners", icon: Gavel, location: "Eastern Region" },
   { name: "Legal Defense Network", icon: Shield, location: "Southern States" },
   { name: "Law Institute", icon: BookOpen, location: "Academic Partners" },
-  { name: "Community Legal Center", icon: Users, location: "Local Communities" },
-  { name: "Corporate Law Group", icon: Briefcase, location: "Business Districts" },
-  { name: "Civil Rights Foundation", icon: FileText, location: "Western Region" },
-  { name: "Excellence Legal Services", icon: Award, location: "Northern States" },
+  {
+    name: "Community Legal Center",
+    icon: Users,
+    location: "Local Communities",
+  },
+  {
+    name: "Corporate Law Group",
+    icon: Briefcase,
+    location: "Business Districts",
+  },
+  {
+    name: "Civil Rights Foundation",
+    icon: FileText,
+    location: "Western Region",
+  },
+  {
+    name: "Excellence Legal Services",
+    icon: Award,
+    location: "Northern States",
+  },
   { name: "International Law Firm", icon: Globe, location: "Cross-Border" },
-]
+];
 
 export function InstitutionsSection() {
   return (
@@ -22,7 +58,7 @@ export function InstitutionsSection() {
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-4">
             Our Network
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-foreground text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans font-normal text-foreground text-balance">
             11 trusted institutions serving you
           </h2>
         </div>
@@ -34,7 +70,10 @@ export function InstitutionsSection() {
               className="group flex flex-col items-center text-center p-6 lg:p-8 rounded-lg hover:bg-secondary transition-colors duration-300"
             >
               <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-secondary group-hover:bg-card flex items-center justify-center mb-6 transition-colors duration-300">
-                <institution.icon className="w-7 h-7 lg:w-8 lg:h-8 text-foreground" strokeWidth={1.5} />
+                <institution.icon
+                  className="w-7 h-7 lg:w-8 lg:h-8 text-foreground"
+                  strokeWidth={1.5}
+                />
               </div>
               <h3 className="font-medium text-foreground mb-2 leading-tight">
                 {institution.name}
@@ -47,5 +86,5 @@ export function InstitutionsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

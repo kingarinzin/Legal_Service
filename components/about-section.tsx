@@ -3,19 +3,22 @@ export function AboutSection() {
     {
       number: "01",
       title: "Accessibility",
-      description: "We believe quality legal services should be available to everyone, regardless of location or background.",
+      description:
+        "We believe quality legal services should be available to everyone, regardless of location or background.",
     },
     {
       number: "02",
       title: "Excellence",
-      description: "Our network consists of top-tier legal professionals committed to delivering outstanding results.",
+      description:
+        "Our network consists of top-tier legal professionals committed to delivering outstanding results.",
     },
     {
       number: "03",
       title: "Trust",
-      description: "Built on decades of combined experience, we maintain the highest standards of professional integrity.",
+      description:
+        "Built on decades of combined experience, we maintain the highest standards of professional integrity.",
     },
-  ]
+  ];
 
   return (
     <section id="about" className="py-24 lg:py-32">
@@ -26,7 +29,7 @@ export function AboutSection() {
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-4">
               About Us
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-foreground leading-tight text-balance">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans font-normal text-foreground leading-tight text-balance">
               A unified approach to legal excellence
             </h2>
           </div>
@@ -34,14 +37,16 @@ export function AboutSection() {
           {/* Right Column */}
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              LexConnect was founded with a singular vision: to create a seamless 
-              network of legal institutions that transcends geographical boundaries. 
-              Our platform connects individuals and businesses with qualified legal 
-              professionals across all regions of the country.
+              JusticeSector was founded with a singular vision: to create a
+              seamless network of legal institutions that transcends
+              geographical boundaries. Our platform connects individuals and
+              businesses with qualified legal professionals across all regions
+              of the country.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With over 11 partner institutions and thousands of practicing attorneys, 
-              we ensure that quality legal representation is never out of reach.
+              With over 11 partner institutions and thousands of practicing
+              attorneys, we ensure that quality legal representation is never
+              out of reach.
             </p>
           </div>
         </div>
@@ -64,5 +69,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

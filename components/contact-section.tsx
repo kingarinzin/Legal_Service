@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -13,7 +13,7 @@ export function ContactSection() {
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-4">
             Contact Us
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-foreground text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans font-normal text-foreground text-balance">
             {"Let's start a conversation"}
           </h2>
         </div>
@@ -22,8 +22,8 @@ export function ContactSection() {
           {/* Contact Info */}
           <div className="space-y-12">
             <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-              Have questions about our services or need assistance finding the right 
-              legal institution? We&apos;re here to help.
+              Have questions about our services or need assistance finding the
+              right legal institution? We&apos;re here to help.
             </p>
 
             <div className="space-y-8">
@@ -33,27 +33,39 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Email</p>
-                  <p className="text-muted-foreground">contact@lexconnect.com</p>
+                  <p className="text-muted-foreground">
+                    contact@JusticeSector.com
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-foreground" strokeWidth={1.5} />
+                  <Phone
+                    className="w-5 h-5 text-foreground"
+                    strokeWidth={1.5}
+                  />
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Phone</p>
-                  <p className="text-muted-foreground">+1 (800) 555-0123</p>
+                  <p className="text-muted-foreground">+975 77001100</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-foreground" strokeWidth={1.5} />
+                  <MapPin
+                    className="w-5 h-5 text-foreground"
+                    strokeWidth={1.5}
+                  />
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Office</p>
-                  <p className="text-muted-foreground">123 Legal Avenue, Suite 500<br />Washington, DC 20001</p>
+                  <p className="text-muted-foreground">
+                    11001 Chhubachhu, JusticeSector
+                    <br />
+                    Thimphu, Bhutan
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,43 +75,55 @@ export function ContactSection() {
           <form className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="firstName"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   First Name
                 </label>
                 <Input
                   id="firstName"
                   type="text"
-                  placeholder="John"
+                  placeholder="Pema"
                   className="rounded-lg h-12 bg-background"
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="lastName"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Last Name
                 </label>
                 <Input
                   id="lastName"
                   type="text"
-                  placeholder="Doe"
+                  placeholder="Pema"
                   className="rounded-lg h-12 bg-background"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-foreground mb-2"
+              >
                 Email
               </label>
               <Input
                 id="email"
                 type="email"
-                placeholder="john@example.com"
+                placeholder="pema@example.com"
                 className="rounded-lg h-12 bg-background"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-foreground mb-2"
+              >
                 Message
               </label>
               <Textarea
@@ -109,12 +133,16 @@ export function ContactSection() {
               />
             </div>
 
-            <Button type="submit" size="lg" className="rounded-full px-8 w-full sm:w-auto">
+            <Button
+              type="submit"
+              size="lg"
+              className="rounded-full px-8 w-full sm:w-auto"
+            >
               Send Message
             </Button>
           </form>
         </div>
       </div>
     </section>
-  )
+  );
 }

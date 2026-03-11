@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -8,25 +8,39 @@ export function Footer() {
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">L</span>
+              <span className="text-primary-foreground font-bold text-sm">
+                Js
+              </span>
             </div>
             <span className="font-semibold text-xl tracking-tight text-foreground">
-              LexConnect
+              JusticeSector
             </span>
           </Link>
 
           {/* Navigation */}
           <nav className="flex flex-wrap gap-8">
-            <Link href="#home" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#home"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Home
             </Link>
-            <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#about"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               About Us
             </Link>
-            <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#contact"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contact Us
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Privacy Policy
             </Link>
           </nav>
@@ -34,10 +48,11 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground text-center">
-            &copy; {new Date().getFullYear()} LexConnect. All rights reserved.
+            &copy; {new Date().getFullYear()} JusticeSector. All rights
+            reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
